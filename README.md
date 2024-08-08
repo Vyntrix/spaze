@@ -1,38 +1,42 @@
-# create-svelte
+# spaze.dev
 
-Everything you need to build a Svelte project, powered by [`create-svelte`](https://github.com/sveltejs/kit/tree/main/packages/create-svelte).
+## About
 
-## Creating a project
+The ultimate portfolio site for showcasing your projects, skills, and experiences as a developer.
 
-If you're seeing this, you've probably already done this step. Congrats!
+## Key Features
 
-```bash
-# create a new project in the current directory
-npm create svelte@latest
+- **About Me**: A section to introduce the developer and share their background and journey in the tech world.
+- **Projects**: A showcase of diverse projects with descriptions, technologies used, and links to repositories.
+- **Blog**: Articles and tutorials on various development topics.
+- **Skills**: A highlight of technical skills and experiences.
+- **Contact**: A way for visitors to get in touch for collaboration, job opportunities, or networking.
 
-# create a new project in my-app
-npm create svelte@latest my-app
-```
+## Installation
 
-## Developing
+1. Clone the repository
 
-Once you've created a project and installed dependencies with `npm install` (or `pnpm install` or `yarn`), start a development server:
+   ```bash
+   git clone https://github.com/vyntrix/spaze.git
+   cd spaze
+   ```
 
-```bash
-npm run dev
+2. Install dependencies
 
-# or start the server and open the app in a new browser tab
-npm run dev -- --open
-```
+   ```bash
+   pnpm install
+   ```
 
-## Building
+3. Start the development server
+   ```bash
+   pnpm dev
+   ```
 
-To create a production version of your app:
+## Contributing
 
-```bash
-npm run build
-```
+Contributions are welcome!
+Please fork the repository and create a pull request with your changes.
 
-You can preview the production build with `npm run preview`.
+## License
 
-> To deploy your app, you may need to install an [adapter](https://kit.svelte.dev/docs/adapters) for your target environment.
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.

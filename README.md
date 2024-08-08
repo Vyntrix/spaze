@@ -1,4 +1,4 @@
-# spaze.dev
+# SPAZE
 
 ## About
 
@@ -11,6 +11,18 @@ The ultimate portfolio site for showcasing your projects, skills, and experience
 - **Blog**: Articles and tutorials on various development topics.
 - **Skills**: A highlight of technical skills and experiences.
 - **Contact**: A way for visitors to get in touch for collaboration, job opportunities, or networking.
+
+## Feature Completion Status
+
+- [ ] About Me
+- [ ] Projects
+- [ ] Blog
+- [ ] Skills
+- [ ] Contact
+
+### Additional Edits Planned
+
+- [ ] Tailwind CSS for styling (We are currently using PicoCSS for prototyping)
 
 ## Installation
 

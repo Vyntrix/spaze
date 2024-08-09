@@ -1,21 +1,19 @@
-node_modules
-
-# Output
-.output
-.vercel
-/.svelte-kit
-/build
-
-# OS
 .DS_Store
-Thumbs.db
-
-# Env
+node_modules
+/build
+/.svelte-kit
+/package
 .env
+.env.test
 .env.*
 !.env.example
-!.env.test
-
-# Vite
 vite.config.js.timestamp-*
 vite.config.ts.timestamp-*
+/prisma/dev.db
+/docker-data
+settings.json
+auth.json
+.nyc_output
+coverage
+scripts/exportDB.ts
+/coverage*

@@ -1,12 +1,15 @@
 import type { PlaywrightTestConfig } from '@playwright/test';
 
 const config: PlaywrightTestConfig = {
+	use: {
+		locale: 'en-US',
+		// headless: false,
+	},
 	webServer: {
-		command: 'npm run build && npm run preview',
-		port: 4173
+		command: `dotenv -e .env.test -- pnpm run preview`,
+		port: 4173,
 	},
 	testDir: 'tests',
-	testMatch: /(.+\.)?(test|spec)\.[jt]s/
 };
 
 export default config;

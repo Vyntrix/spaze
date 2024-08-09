@@ -1,0 +1,22 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@tailwind variants;
+
+:root [data-theme='crimson'] {
+	--theme-rounded-container: theme(borderRadius.sm);
+	--theme.rounded-base: theme(borderRadius.sm);
+}
+
+@layer components {
+	.video-grid {
+		@apply grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 2xl:grid-cols-5;
+	}
+}
+
+@media (prefers-reduced-motion) {
+	* {
+		animation-duration: 1ms;
+		transition-duration: 1ms;
+	}
+}

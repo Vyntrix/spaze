@@ -1,54 +1,46 @@
-# SPAZE
+## SPAZE
 
-## About
+[SPAZE](https://spaze.dev) is the ultimate portfolio site for showcasing your projects, skills, and experiences as a developer.
 
-The ultimate portfolio site for showcasing your projects, skills, and experiences as a developer.
+## 🙏 Contributing
 
-## Key Features
+If you would like to contribute to this project, please follow the [Contributing Guidelines](CONTRIBUTING.md).
 
-- **About Me**: A section to introduce the developer and share their background and journey in the tech world.
-- **Projects**: A showcase of diverse projects with descriptions, technologies used, and links to repositories.
-- **Blog**: Articles and tutorials on various development topics.
-- **Skills**: A highlight of technical skills and experiences.
-- **Contact**: A way for visitors to get in touch for collaboration, job opportunities, or networking.
+## 🚀 Uses
 
-## Feature Completion Status
+- ⚡ [SvelteKit](https://kit.svelte.dev) - Because it's awesome!
 
-- [ ] About Me
-- [ ] Projects
-- [ ] Blog
-- [ ] Skills
-- [ ] Contact
+- 🎨 [Tailwind CSS](https://tailwindcss.com) - For rapid UI development
 
-### Additional Edits Planned
+## 🛠️ Setup
 
-- [ ] Tailwind CSS for styling (We are currently using PicoCSS for prototyping)
+To get started, create a fork of this repository and clone it to your local machine.
+The project uses **[pnpm](https://pnpm.io/)**.
 
-## Installation
+```sh
+git clone https://github.com/vyntrix/spaze
+```
 
-1. Clone the repository
+#### Next, install the dependencies.
 
-   ```bash
-   git clone https://github.com/vyntrix/spaze.git
-   cd spaze
-   ```
+```sh
+cd spaze
+pnpm install
+```
 
-2. Install dependencies
+#### Rename '.env.example' to '.env'
 
-   ```bash
-   pnpm install
-   ```
+```text
+# Private
+DATABASE_URL="INSERT_HERE"
+```
 
-3. Start the development server
-   ```bash
-   pnpm dev
-   ```
+#### Finally, start the development server.
 
-## Contributing
+```sh
+pnpm run dev
+```
 
-Contributions are welcome!
-Please fork the repository and create a pull request with your changes.
+## 📝 License
 
-## License
-
-This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.

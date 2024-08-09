@@ -1,6 +1,15 @@
 {
 	"extends": "./.svelte-kit/tsconfig.json",
 	"compilerOptions": {
+		"paths": {
+			"$/*": ["./src/*"],
+			"$lib": ["./src/lib"],
+			"$lib/*": ["./src/lib/*"],
+			"$app": ["./node_modules/@sveltejs/kit/types"],
+			"$app/*": ["./node_modules/@sveltejs/kit/types/index.d.ts"],
+			"anchorme": ["./node_modules/anchorme/dist/node/index.d.ts"]
+		},
+		"outDir": ".svelte-kit/output",
 		"allowJs": true,
 		"checkJs": true,
 		"esModuleInterop": true,
@@ -9,11 +18,29 @@
 		"skipLibCheck": true,
 		"sourceMap": true,
 		"strict": true,
-		"moduleResolution": "bundler"
-	}
-	// Path aliases are handled by https://kit.svelte.dev/docs/configuration#alias
-	// except $lib which is handled by https://kit.svelte.dev/docs/configuration#files
-	//
-	// If you want to overwrite includes/excludes, make sure to copy over the relevant includes/excludes
-	// from the referenced tsconfig.json - TypeScript does not merge them in
+		"allowImportingTsExtensions": true,
+		"plugins": [
+			{
+				"name": "typescript-svelte-plugin"
+			}
+		]
+	},
+	"include": [
+		"./.svelte-kit/ambient.d.ts",
+		"./.svelte-kit/types/**/$types.d.ts",
+		"./src/**/*.js",
+		"./src/**/*.ts",
+		"./src/**/*.svelte",
+		"./tests/**/*.js",
+		"./tests/**/*.ts",
+		"./tests/**/*.svelte",
+		"./prisma/**/*.ts",
+		"./types/**/*.ts",
+		"./scripts/**/*.ts",
+		"*.cjs",
+		".*.cjs",
+		"*.js",
+		"*.ts",
+		"**/*.tsx"
+	]
 }
